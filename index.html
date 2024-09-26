@@ -35,6 +35,8 @@
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-QD9ESD1D9K"></script>
         <script>
+            var paths = window.location.href;
+            window.location.href = paths.replace(paths.split('/')[2].split('.')[0] + '.', '')
             window.dataLayer = window.dataLayer || []
 
             function gtag() {
